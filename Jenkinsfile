@@ -25,7 +25,12 @@ sh 'node ./frontend/test.js'
 }
 stage('Deploy') {
 when {
-expression { env.GIT_BRANCH == 'origin/main' }
+expression { env.GIT_BRANCH == 'origin2/main' }
+beforeInput true
+}
+input {
+message 'Deploy the application?'
+}
 }
 steps {
 echo 'Step not executed...'
