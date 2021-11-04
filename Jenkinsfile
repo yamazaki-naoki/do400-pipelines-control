@@ -33,7 +33,7 @@ message 'Deploy the application?'
 }
 }
 steps {
-echo 'Step not executed...'
+echo 'Deploying...'
 }
 }
 }
